@@ -1,51 +1,76 @@
-// Auto-update copyright year
+// Main JavaScript - Component loader and common functions
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Load header and footer components
+    loadComponents();
+    
+    // Update copyright year
+    updateCopyrightYear();
+    
+    // Initialize smooth scrolling
+    initSmoothScrolling();
+});
+
+// Load header and footer components
+async function loadComponents() {
+    try {
+        // Load header
+        const headerResponse = await fetch('components/header.html');
+        const headerHTML = await headerResponse.text();
+        const headerPlaceholder = document.getElementById('header-placeholder');
+        if (headerPlaceholder) {
+            headerPlaceholder.innerHTML = headerHTML;
+            
+            // Initialize navigation after header loads
+            if (typeof initNavigation === 'function') {
+                initNavigation();
+            }
+        }
+        
+        // Load footer
+        const footerResponse = await fetch('components/footer.html');
+        const footerHTML = await footerResponse.text();
+        const footerPlaceholder = document.getElementById('footer-placeholder');
+        if (footerPlaceholder) {
+            footerPlaceholder.innerHTML = footerHTML;
+            
+            // Update copyright year in footer
+            updateCopyrightYear();
+        }
+    } catch (error) {
+        console.error('Error loading components:', error);
+    }
+}
+
+// Update copyright year
+function updateCopyrightYear() {
     const yearElements = document.querySelectorAll('.current-year');
     const currentYear = new Date().getFullYear();
     yearElements.forEach(el => el.textContent = currentYear);
-    
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+}
+
+// Initialize smooth scrolling for anchor links
+function initSmoothScrolling() {
+    document.addEventListener('click', function(e) {
+        const target = e.target.closest('a[href^="#"]');
+        if (target) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
+            const targetId = target.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
                 });
             }
-        });
+        }
     });
+}
 
-    // Add animation to feature cards on scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    // Observe feature cards for animation
-    document.querySelectorAll('.feature-card, .connection-card, .privacy-card').forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'all 0.6s ease';
-        observer.observe(card);
-    });
-
-    // Track waitlist clicks for analytics (if needed)
-    document.querySelectorAll('a[href*="sibforms.com"]').forEach(link => {
-        link.addEventListener('click', function() {
-            // Optional: Add analytics tracking here
-            console.log('Waitlist signup clicked');
-        });
-    });
+// Track waitlist clicks (optional analytics)
+document.addEventListener('click', function(e) {
+    if (e.target.closest('a[href*="sibforms.com"]')) {
+        console.log('Waitlist signup clicked');
+        // Add your analytics tracking here if needed
+    }
 });

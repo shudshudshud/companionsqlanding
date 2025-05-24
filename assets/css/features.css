@@ -1,0 +1,233 @@
+/* Features CSS - Feature Cards and Grids */
+
+.features {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.features-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #718096;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+.feature-card p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+/* Core Features Section */
+.core-features {
+    padding: 100px 0;
+    background: white;
+}
+
+.core-features h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #2d3748;
+}
+
+.core-features .subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #718096;
+    margin-bottom: 80px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Feature Showcase */
+.feature-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.feature-showcase.reverse {
+    direction: rtl;
+}
+
+.feature-showcase.reverse > * {
+    direction: ltr;
+}
+
+.feature-content h3 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.feature-content p {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.feature-benefits {
+    list-style: none;
+}
+
+.feature-benefits li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #2d3748;
+}
+
+.feature-benefits li::before {
+    content: '✨';
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.feature-visual {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-visual .feature-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.feature-demo {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #4a5568;
+    border-left: 4px solid #667eea;
+}
+
+.demo-input {
+    font-style: italic;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.demo-output {
+    background: #f7fafc;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+/* Connection Features */
+.connection-features {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.connection-features h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #2d3748;
+}
+
+.connection-features .subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #718096;
+    margin-bottom: 80px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.connection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.connection-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.connection-card .icon {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+
+.connection-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.connection-card p {
+    color: #718096;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.connection-card em {
+    background: #f7fafc;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    color: #4a5568;
+    font-style: italic;
+    border-left: 3px solid #667eea;
+    display: block;
+    text-align: left;
+}

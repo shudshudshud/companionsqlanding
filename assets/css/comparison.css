@@ -1,0 +1,441 @@
+/* Comparison CSS - Comparison Tables and Cards */
+
+/* Key Difference Section */
+.key-difference {
+    padding: 80px 0;
+    background: white;
+    text-align: center;
+}
+
+.key-difference h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2d3748;
+}
+
+.difference-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.difference-card {
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.difference-card.companionsquared {
+    background: linear-gradient(135deg, #e6f3ff 0%, #f0e6ff 100%);
+    border: 3px solid #667eea;
+}
+
+.difference-card.dex {
+    background: linear-gradient(135deg, #fff7ed 0%, #fef3c7 100%);
+    border: 3px solid #f59e0b;
+}
+
+.difference-card.clay {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border: 3px solid #0ea5e9;
+}
+
+.difference-card.monica {
+    background: linear-gradient(135deg, #e6fffa 0%, #f0fff4 100%);
+    border: 3px solid #38a169;
+}
+
+.difference-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+.difference-card .tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #4a5568;
+}
+
+.difference-card p {
+    color: #718096;
+    line-height: 1.7;
+}
+
+/* Comparison Table */
+.detailed-comparison {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.detailed-comparison h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #2d3748;
+}
+
+.comparison-table {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.comparison-row {
+    padding: 25px 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    align-items: center;
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.comparison-row:nth-child(even) {
+    background: #f8fafc;
+}
+
+.feature-name {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.feature-description {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-top: 5px;
+}
+
+.check-yes {
+    color: #38a169;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.check-no {
+    color: #e53e3e;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.check-partial {
+    color: #d69e2e;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Audience Section */
+.audience-section {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.audience-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2d3748;
+}
+
+.audience-section .subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #718096;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.audience-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.audience-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.persona-list {
+    list-style: none;
+}
+
+.persona-list li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f7fafc;
+    border-radius: 10px;
+    border-left: 4px solid;
+}
+
+.companionsquared .persona-list li {
+    border-left-color: #667eea;
+}
+
+.dex .persona-list li {
+    border-left-color: #f59e0b;
+}
+
+.clay .persona-list li {
+    border-left-color: #0ea5e9;
+}
+
+.persona-title {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.persona-description {
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.philosophy-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2d3748;
+}
+
+.philosophy-section .subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #718096;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.philosophy-card {
+    background: #f7fafc;
+    padding: 40px;
+    border-radius: 20px;
+    border-left: 5px solid;
+}
+
+.philosophy-card.companionsquared {
+    border-left-color: #667eea;
+}
+
+.philosophy-card.monica {
+    border-left-color: #38a169;
+}
+
+.philosophy-card.clay {
+    border-left-color: #0ea5e9;
+}
+
+.philosophy-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2d3748;
+}
+
+.philosophy-card .tagline {
+    font-style: italic;
+    color: #718096;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.philosophy-card .approach {
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+/* Use Cases */
+.use-cases {
+    padding: 80px 0;
+    background: white;
+}
+
+.use-cases h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #2d3748;
+}
+
+.use-case-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.use-case-card {
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background: white;
+}
+
+.use-case-card.companionsquared {
+    background: linear-gradient(135deg, #e6f3ff 0%, #f0e6ff 100%);
+    border: 2px solid #667eea;
+}
+
+.use-case-card.monica {
+    background: linear-gradient(135deg, #e6fffa 0%, #f0fff4 100%);
+    border: 2px solid #38a169;
+}
+
+.use-case-card.clay {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border: 2px solid #0ea5e9;
+}
+
+.use-case-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.use-case-list {
+    list-style: none;
+}
+
+.use-case-list li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    color: #4a5568;
+}
+
+.use-case-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #38a169;
+    font-weight: bold;
+}
+
+.companionsquared .use-case-list li::before {
+    color: #667eea;
+}
+
+/* Final Recommendation */
+.final-recommendation {
+    padding: 80px 0;
+    background: #2d3748;
+    color: white;
+    text-align: center;
+}
+
+.final-recommendation h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.final-recommendation p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+
+.recommendation-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.recommendation-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #e2e8f0;
+}
+
+.recommendation-card p {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button.cta-primary {
+    background: #667eea;
+    color: white;
+}
+
+.cta-button.cta-primary:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+.cta-button.cta-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-button.cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
