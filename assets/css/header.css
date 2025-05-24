@@ -29,12 +29,18 @@
     align-items: center;
     text-decoration: none;
     color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 .logo img {
     height: 40px;
     width: auto;
     margin-right: 10px;
+}
+
+.logo span {
+    color: #2d3748;
 }
 
 .nav-wrapper {
