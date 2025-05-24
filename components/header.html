@@ -1,240 +1,35 @@
-/* Responsive CSS - Mobile and Tablet Styles */
-
-/* Tablet Styles */
-@media (max-width: 1024px) {
-    .hero-content {
-        gap: 40px;
-    }
+<!-- Site Header -->
+<header id="site-header" class="site-header">
+    <div class="header-container">
+        <a href="/" class="logo">
+            <img src="companionsquared-logo-final.ico" alt="CompanionSquared Logo">
+            CompanionSquared
+        </a>
+        
+        <div class="nav-wrapper">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/product.html">Product</a></li>
+                    <li><a href="/vs-monica.html">vs Monica</a></li>
+                    <li><a href="/vs-clay.html">vs Clay</a></li>
+                    <li><a href="/vs-dex.html">vs Dex</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header-cta">Get Started</a>
+        </div>
+        
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <span class="hamburger"></span>
+        </button>
+    </div>
     
-    .hero-text h1 {
-        font-size: 3rem;
-    }
-    
-    .features-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-    }
-    
-    .footer-sections {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    /* Header Mobile */
-    .nav-wrapper {
-        display: none;
-    }
-    
-    .mobile-menu-btn {
-        display: block;
-    }
-    
-    .mobile-menu {
-        display: block;
-    }
-    
-    .header-container {
-        padding: 15px 20px;
-    }
-    
-    /* Hero Mobile */
-    .hero {
-        min-height: auto;
-        padding: 100px 0 60px;
-    }
-    
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .hero-text h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero-text .subtitle {
-        font-size: 1.2rem;
-    }
-    
-    .hero-text p {
-        font-size: 1rem;
-    }
-    
-    .cta-section {
-        align-items: center;
-    }
-    
-    .cta-primary {
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    /* Page Headers Mobile */
-    .page-header {
-        padding: 100px 0 60px;
-    }
-    
-    .page-header h1 {
-        font-size: 2rem;
-    }
-    
-    .page-header p {
-        font-size: 1.1rem;
-    }
-    
-    /* Features Mobile */
-    .features-grid,
-    .process-steps,
-    .privacy-features,
-    .connection-grid,
-    .privacy-grid,
-    .process-flow {
-        grid-template-columns: 1fr;
-    }
-    
-    .feature-showcase {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 40px;
-    }
-    
-    .feature-showcase.reverse {
-        direction: ltr;
-    }
-    
-    /* Comparison Mobile */
-    .philosophy-section,
-    .philosophy-grid,
-    .use-case-grid,
-    .pricing-cards,
-    .difference-cards,
-    .audience-grid,
-    .recommendation-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .table-header,
-    .comparison-row {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        text-align: left;
-    }
-    
-    .table-header {
-        display: none;
-    }
-    
-    .comparison-row {
-        border-bottom: 2px solid #e2e8f0;
-        padding: 20px;
-    }
-    
-    .comparison-row > div:first-child {
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #e2e8f0;
-    }
-    
-    .process-step::after {
-        display: none;
-    }
-    
-    /* Footer Mobile */
-    .footer-sections {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .footer-legal {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .footer-links {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    /* Pricing Mobile */
-    .pricing-card.featured {
-        transform: none;
-    }
-    
-    /* Buttons Mobile */
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .cta-button {
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    /* Typography Mobile */
-    h1 {
-        font-size: 2.5rem;
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
-    
-    h3 {
-        font-size: 1.3rem;
-    }
-    
-    /* Sections Mobile */
-    section {
-        padding: 60px 0;
-    }
-    
-    .core-features,
-    .connection-features {
-        padding: 60px 0;
-    }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-    
-    .hero-text .subtitle {
-        font-size: 1.1rem;
-    }
-    
-    h2 {
-        font-size: 1.8rem;
-    }
-    
-    .feature-card {
-        padding: 30px 20px;
-    }
-    
-    .pricing-card {
-        padding: 30px 20px;
-    }
-}
-
-/* Landscape Mobile */
-@media (max-width: 812px) and (orientation: landscape) {
-    .hero {
-        min-height: auto;
-        padding: 80px 0 40px;
-    }
-    
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-}
+    <div id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="/product.html">Product</a></li>
+            <li><a href="/vs-monica.html">vs Monica</a></li>
+            <li><a href="/vs-clay.html">vs Clay</a></li>
+            <li><a href="/vs-dex.html">vs Dex</a></li>
+            <li><a href="#" class="header-cta">Get Started</a></li>
+        </ul>
+    </div>
+</header>
