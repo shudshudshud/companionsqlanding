@@ -27,16 +27,14 @@
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
-    color: #2d3748;
-    font-weight: 700;
-    font-size: 1.3rem;
+    color: var(--text-color);
 }
 
 .logo img {
-    width: 32px;
-    height: 32px;
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
 }
 
 .nav-wrapper {
