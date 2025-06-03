@@ -438,19 +438,17 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Alternatives Page Specific Styles */
+/* Alternatives Section */
 .alternatives-section {
-    padding: 80px 0;
-    background: white;
+    padding: 60px 0;
+    background: #f8fafc;
 }
 
 .alternatives-section h2 {
-    font-size: 2.2rem;
-    margin: 60px 0 40px 0;
-    color: #2d3748;
     text-align: center;
-    border-bottom: 2px solid #e2e8f0;
-    padding-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2d3748;
 }
 
 .alternatives-section h2:first-of-type {
@@ -459,32 +457,33 @@
 
 .alternatives-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-bottom: 80px;
+    margin: 40px 0;
 }
 
 .alternative-card {
-    background: #f8fafc;
+    background: white;
     padding: 30px;
     border-radius: 15px;
-    border-left: 4px solid #667eea;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .alternative-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
     color: #2d3748;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.alternative-link {
+    margin-bottom: 20px;
 }
 
 .alternative-link a {
-    font-size: 0.9rem;
     color: #667eea;
     text-decoration: none;
     font-weight: 600;
+    transition: color 0.3s;
 }
 
 .alternative-link a:hover {
@@ -503,38 +502,38 @@
 
 /* Our Approach Section */
 .our-approach {
-    padding: 80px 0;
-    background: #f8fafc;
+    padding: 60px 0;
+    background: white;
 }
 
 .our-approach h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: #2d3748;
 }
 
 .approach-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .approach-card {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .approach-card.companionsquared {
-    border: 3px solid #667eea;
+    background: linear-gradient(135deg, #e6f3ff 0%, #f0e6ff 100%);
 }
 
 .approach-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     color: #2d3748;
 }
@@ -545,15 +544,14 @@
 }
 
 .approach-card li {
-    margin-bottom: 12px;
-    padding-left: 20px;
+    margin-bottom: 15px;
+    padding-left: 25px;
     position: relative;
     color: #4a5568;
-    line-height: 1.6;
 }
 
 .approach-card li::before {
-    content: '✓';
+    content: "✓";
     position: absolute;
     left: 0;
     color: #667eea;
@@ -562,80 +560,44 @@
 
 /* Final CTA Section */
 .final-cta {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    padding: 60px 0;
+    background: #f8fafc;
     text-align: center;
 }
 
 .final-cta h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: white;
+    color: #2d3748;
 }
 
 .final-cta p {
     font-size: 1.2rem;
+    color: #718096;
     margin-bottom: 40px;
-    opacity: 0.9;
 }
 
-/* Responsive Styles */
+/* Responsive Design */
 @media (max-width: 768px) {
     .difference-cards,
-    .philosophy-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    
-    .table-header,
-    .comparison-row {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        text-align: left;
-    }
-    
-    .table-header {
-        display: none;
-    }
-    
-    .comparison-row {
-        border-bottom: 2px solid #e2e8f0;
-        padding: 20px;
-    }
-    
-    .comparison-row > div:first-child {
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #e2e8f0;
-    }
-    
-    .difference-card,
-    .philosophy-card {
-        padding: 25px;
-    }
-    
-    .difference-card h3,
-    .philosophy-card h3 {
-        font-size: 1.5rem;
-    }
-    
-    .difference-card .tagline,
-    .philosophy-card .tagline {
-        font-size: 1.1rem;
-    }
-    
-    .alternatives-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .alternative-card h3 {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-    
+    .alternatives-grid,
     .approach-grid {
         grid-template-columns: 1fr;
+    }
+
+    .difference-card,
+    .alternative-card,
+    .approach-card {
+        padding: 20px;
+    }
+
+    .difference-card h3,
+    .alternative-card h3,
+    .approach-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .difference-card .tagline {
+        font-size: 1rem;
     }
 }

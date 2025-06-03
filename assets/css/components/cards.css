@@ -1,0 +1,110 @@
+/* Card Components */
+.card {
+    background: var(--color-background);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg);
+    transition: var(--transition-base);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+/* Card Variants */
+.card-bordered {
+    border: 1px solid var(--color-border);
+}
+
+.card-flat {
+    box-shadow: none;
+    border: 1px solid var(--color-border);
+}
+
+.card-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: white;
+}
+
+/* Card Sizes */
+.card-sm {
+    padding: var(--spacing-md);
+}
+
+.card-lg {
+    padding: var(--spacing-xl);
+}
+
+/* Card Header */
+.card-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.card-header h3 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.card-header p {
+    color: var(--color-text-lighter);
+    margin-bottom: 0;
+}
+
+/* Card Body */
+.card-body {
+    margin-bottom: var(--spacing-md);
+}
+
+.card-body:last-child {
+    margin-bottom: 0;
+}
+
+/* Card Footer */
+.card-footer {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+/* Card List */
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+/* Card Interactive */
+.card-interactive {
+    cursor: pointer;
+}
+
+.card-interactive:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Card Featured */
+.card-featured {
+    position: relative;
+    border: 2px solid var(--color-primary);
+}
+
+.card-featured::before {
+    content: 'Featured';
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background: var(--color-primary);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+} 

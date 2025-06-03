@@ -1,0 +1,25 @@
+/* Base */
+@import 'base/variables.css';
+@import 'base/reset.css';
+@import 'base/typography.css';
+
+/* Components */
+@import 'components/buttons.css';
+@import 'components/cards.css';
+@import 'components/grids.css';
+
+/* Utilities */
+@import 'utilities/responsive.css';
+@import 'utilities/helpers.css';
+
+/* Layouts */
+@import 'layouts/header.css';
+@import 'layouts/footer.css';
+@import 'layouts/hero.css';
+
+/* Pages */
+@import 'pages/features.css';
+@import 'pages/pricing.css';
+@import 'pages/why.css';
+@import 'pages/comparison.css';
+@import 'pages/404.css'; 
