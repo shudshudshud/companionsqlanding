@@ -243,4 +243,8 @@
         font-size: 1rem;
         padding: 14px 0;
     }
+}
+
+.privacy-section {
+    padding: var(--spacing-2xl) 0;
 } 
