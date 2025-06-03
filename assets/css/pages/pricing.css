@@ -1,23 +1,23 @@
 /* Pricing CSS - Pricing Section Styles */
 
 .pricing-section {
-    padding: 80px 0;
-    background: #f8fafc;
+    padding: var(--spacing-xl) 0;
+    background: var(--color-background-alt);
 }
 
 .pricing-card {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background: var(--color-background);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
     text-align: center;
-    border: 2px solid #e2e8f0;
+    border: 2px solid var(--color-border);
     max-width: 600px;
-    margin: 0 auto 60px;
+    margin: 0 auto var(--spacing-lg);
 }
 
 .pricing-card.companionsquared {
-    border-color: #667eea;
+    border-color: var(--color-primary);
 }
 
 .pricing-card.monica {
@@ -33,47 +33,47 @@
 }
 
 .pricing-card.featured {
-    border: 3px solid #667eea;
+    border: 3px solid var(--color-primary);
     transform: scale(1.05);
 }
 
 .pricing-header {
-    margin-bottom: 40px;
+    margin-bottom: var(--spacing-lg);
 }
 
 .pricing-header h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #2d3748;
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
 }
 
 .price {
-    font-size: 3.5rem;
+    font-size: var(--font-size-5xl);
     font-weight: bold;
-    color: #667eea;
-    margin-bottom: 10px;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
 }
 
 .price span {
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl);
     font-weight: normal;
-    color: #718096;
+    color: var(--color-text-lighter);
 }
 
 .price-subtitle {
-    color: #718096;
-    font-size: 1.1rem;
+    color: var(--color-text-lighter);
+    font-size: var(--font-size-lg);
 }
 
 .pricing-features {
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: var(--spacing-lg);
 }
 
 .pricing-features h3 {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    color: #2d3748;
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
 }
 
 .pricing-features ul {
@@ -81,23 +81,23 @@
 }
 
 .pricing-features li {
-    margin-bottom: 15px;
-    padding-left: 30px;
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-lg);
     position: relative;
-    color: #4a5568;
-    font-size: 1.1rem;
+    color: var(--color-text-light);
+    font-size: var(--font-size-lg);
 }
 
 .pricing-features li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #667eea;
+    color: var(--color-primary);
     font-weight: bold;
 }
 
 .pricing-cta {
-    margin-top: 40px;
+    margin-top: var(--spacing-lg);
 }
 
 .pricing-cta .cta-primary {
@@ -109,83 +109,83 @@
 /* Pricing Guarantee */
 .pricing-guarantee {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: var(--spacing-2xl);
 }
 
 .pricing-guarantee h3 {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
-    color: #2d3748;
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text);
 }
 
 .guarantee-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: var(--spacing-lg);
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .guarantee-item {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background: var(--color-background);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
 }
 
 .guarantee-icon {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-sm);
 }
 
 .guarantee-item h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #2d3748;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-text);
 }
 
 .guarantee-item p {
-    color: #718096;
-    font-size: 0.95rem;
+    color: var(--color-text-lighter);
+    font-size: var(--font-size-sm);
 }
 
 /* FAQ Section */
 .faq-section {
-    padding: 80px 0;
-    background: white;
+    padding: var(--spacing-xl) 0;
+    background: var(--color-background);
 }
 
 .faq-section h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 60px;
-    color: #2d3748;
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-2xl);
+    color: var(--color-text);
 }
 
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: var(--spacing-xl);
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .faq-item {
-    background: #f8fafc;
-    padding: 30px;
-    border-radius: 15px;
-    border-left: 4px solid #667eea;
+    background: var(--color-background-alt);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-primary);
 }
 
 .faq-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #2d3748;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
 }
 
 .faq-item p {
-    color: #718096;
-    font-size: 0.95rem;
+    color: var(--color-text-lighter);
+    font-size: var(--font-size-sm);
     line-height: 1.6;
 }
 
