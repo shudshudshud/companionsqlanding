@@ -2,12 +2,12 @@
 
 :root {
     --hero-bottom-spacing: 3.5rem;
-    --hero-cta-bg: #667eea;
+    --hero-cta-bg: #00b894;
     --hero-cta-color: #fff;
     --hero-cta-radius: 12px;
     --hero-cta-padding: 1rem 2.5rem;
-    --hero-cta-shadow: 0 4px 16px rgba(102, 126, 234, 0.18);
-    --hero-cta-hover-bg: #5a67d8;
+    --hero-cta-shadow: 0 4px 16px rgba(0, 184, 148, 0.18);
+    --hero-cta-hover-bg: #009e74;
 }
 
 .hero {
@@ -223,7 +223,7 @@
 .hero-waitlist-btn:hover,
 .hero-waitlist-btn:focus {
     background: var(--hero-cta-hover-bg);
-    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.22);
+    box-shadow: 0 8px 24px rgba(0, 184, 148, 0.22);
     transform: translateY(-2px) scale(1.03);
     color: #fff;
     outline: none;
@@ -232,7 +232,8 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
-        padding-top: 80px;
+        padding-top: 100px;
+        padding-bottom: 48px;
         min-height: unset;
         margin-bottom: 2.5rem;
     }
@@ -247,7 +248,7 @@
         margin: 0 auto;
     }
     .hero-text h1 {
-        font-size: var(--font-size-2xl, 2rem);
+        padding-top: 18px;
     }
     .hero-text .subtitle {
         font-size: var(--font-size-lg, 1.1rem);
