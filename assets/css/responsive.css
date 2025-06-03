@@ -19,6 +19,14 @@
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
+    
+    .goals-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .use-cases-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
 }
 
 /* Mobile Styles */
@@ -91,7 +99,9 @@
     .privacy-features,
     .connection-grid,
     .privacy-grid,
-    .process-flow {
+    .process-flow,
+    .goals-grid,
+    .use-cases-grid {
         grid-template-columns: 1fr;
     }
     
@@ -105,6 +115,37 @@
         direction: ltr;
     }
     
+    /* New Homepage Sections Mobile */
+    .friendship-goals h2,
+    .use-cases h2 {
+        font-size: 2rem;
+    }
+    
+    .goal-card,
+    .use-case-card {
+        padding: 25px;
+    }
+    
+    .goal-card h3,
+    .use-case-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .friendship-goals,
+    .use-cases {
+        padding: 60px 0;
+    }
+    
+    /* FAQ Mobile */
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .faq-item {
+        padding: 20px;
+    }
+    
     /* Comparison Mobile */
     .philosophy-section,
     .philosophy-grid,
@@ -112,7 +153,9 @@
     .pricing-cards,
     .difference-cards,
     .audience-grid,
-    .recommendation-grid {
+    .recommendation-grid,
+    .approach-grid,
+    .alternatives-grid {
         grid-template-columns: 1fr;
     }
     
@@ -142,6 +185,30 @@
         display: none;
     }
     
+    /* Alternatives Page Mobile */
+    .alternatives-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .alternative-card {
+        padding: 25px;
+    }
+    
+    .alternative-card h3 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 1.3rem;
+    }
+    
+    .approach-card {
+        padding: 25px;
+    }
+    
+    .our-approach h2 {
+        font-size: 2rem;
+    }
+    
     /* Footer Mobile */
     .footer-sections {
         grid-template-columns: 1fr;
@@ -167,6 +234,19 @@
     /* Pricing Mobile */
     .pricing-card.featured {
         transform: none;
+    }
+    
+    .pricing-card {
+        padding: 30px 20px;
+    }
+    
+    .guarantee-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .guarantee-item {
+        padding: 20px;
     }
     
     /* Buttons Mobile */
@@ -202,6 +282,46 @@
     .connection-features {
         padding: 60px 0;
     }
+    
+    /* Privacy/Why Page Mobile */
+    .why-section {
+        padding: 40px 0;
+    }
+    
+    .why-section h3 {
+        font-size: 1.8rem;
+    }
+    
+    .why-section p {
+        font-size: 1.05rem;
+    }
+    
+    .identities-grid,
+    .landscape-point,
+    .why-conclusion {
+        padding: 25px;
+    }
+    
+    .landscape-point h4 {
+        font-size: 1.2rem;
+    }
+    
+    .landscape-point p {
+        font-size: 1rem;
+    }
+    
+    .why-conclusion p {
+        font-size: 1.1rem;
+    }
+    
+    .personal-story,
+    .broader-landscape {
+        margin-bottom: 60px;
+    }
+    
+    .why-conclusion {
+        margin-top: 60px;
+    }
 }
 
 /* Small Mobile */
@@ -223,7 +343,42 @@
     }
     
     .pricing-card {
-        padding: 30px 20px;
+        padding: 25px 15px;
+    }
+    
+    .goal-card,
+    .use-case-card,
+    .alternative-card,
+    .approach-card {
+        padding: 20px;
+    }
+    
+    .faq-item {
+        padding: 15px;
+    }
+    
+    .identities-grid,
+    .landscape-point,
+    .why-conclusion {
+        padding: 20px;
+    }
+    
+    .why-section h3 {
+        font-size: 1.6rem;
+    }
+    
+    .landscape-point h4 {
+        font-size: 1.1rem;
+    }
+    
+    .identity-item {
+        font-size: 1rem;
+    }
+    
+    .cta-primary,
+    .cta-button {
+        padding: 15px 25px;
+        font-size: 1rem;
     }
 }
 
@@ -236,5 +391,17 @@
     
     .hero-text h1 {
         font-size: 2rem;
+    }
+    
+    .page-header {
+        padding: 80px 0 40px;
+    }
+    
+    .friendship-goals,
+    .use-cases,
+    .privacy-section,
+    .alternatives-section,
+    .our-approach {
+        padding: 50px 0;
     }
 }

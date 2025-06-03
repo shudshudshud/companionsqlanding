@@ -438,6 +438,148 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
+/* Alternatives Page Specific Styles */
+.alternatives-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.alternatives-section h2 {
+    font-size: 2.2rem;
+    margin: 60px 0 40px 0;
+    color: #2d3748;
+    text-align: center;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 20px;
+}
+
+.alternatives-section h2:first-of-type {
+    margin-top: 0;
+}
+
+.alternatives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.alternative-card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 4px solid #667eea;
+}
+
+.alternative-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2d3748;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alternative-link a {
+    font-size: 0.9rem;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.alternative-link a:hover {
+    color: #5a67d8;
+}
+
+.alternative-details p {
+    margin-bottom: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.alternative-details strong {
+    color: #2d3748;
+}
+
+/* Our Approach Section */
+.our-approach {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.our-approach h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #2d3748;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.approach-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.approach-card.companionsquared {
+    border: 3px solid #667eea;
+}
+
+.approach-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.approach-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.approach-card li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.approach-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Final CTA Section */
+.final-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.final-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .difference-cards,
@@ -481,5 +623,19 @@
     .difference-card .tagline,
     .philosophy-card .tagline {
         font-size: 1.1rem;
+    }
+    
+    .alternatives-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .alternative-card h3 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .approach-grid {
+        grid-template-columns: 1fr;
     }
 }
