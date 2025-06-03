@@ -127,3 +127,20 @@ footer {
 .footer-links a:hover {
     color: white;
 }
+
+@media (max-width: 900px) {
+    .footer-sections {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+    .footer-legal {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -69,3 +69,31 @@ function setActiveNavLink() {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { initNavigation };
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function () {
+            menuBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Optional: Close menu when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                menuBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+    }
+});
