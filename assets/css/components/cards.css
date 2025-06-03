@@ -107,4 +107,53 @@
     border-radius: var(--radius-sm);
     font-size: var(--font-size-sm);
     font-weight: 600;
+}
+
+/* Privacy Cards */
+.privacy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.privacy-card {
+    background: var(--color-background-alt);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: var(--transition-base);
+}
+
+.privacy-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.privacy-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.privacy-card h3 {
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-lg);
+}
+
+.privacy-card p {
+    color: var(--color-text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .privacy-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .privacy-card {
+        padding: var(--spacing-lg);
+    }
 } 

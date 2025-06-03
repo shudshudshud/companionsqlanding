@@ -1,0 +1,75 @@
+/* Page Header Styles */
+.page-header {
+    background: var(--color-primary);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-header h1 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+}
+
+.page-header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-lg);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Dark variant */
+.page-header.dark {
+    background: var(--color-text);
+}
+
+.page-header.dark::before {
+    background: linear-gradient(135deg, var(--color-text) 0%, var(--color-text-light) 100%);
+}
+
+/* Light variant */
+.page-header.light {
+    background: var(--color-background-alt);
+}
+
+.page-header.light h1 {
+    color: var(--color-text);
+}
+
+.page-header.light p {
+    color: var(--color-text-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-header {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .page-header h1 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .page-header p {
+        font-size: var(--font-size-base);
+    }
+} 
