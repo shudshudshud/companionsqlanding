@@ -1,5 +1,15 @@
 /* Hero CSS - Hero Section Styles */
 
+:root {
+    --hero-bottom-spacing: 3.5rem;
+    --hero-cta-bg: #667eea;
+    --hero-cta-color: #fff;
+    --hero-cta-radius: 12px;
+    --hero-cta-padding: 1rem 2.5rem;
+    --hero-cta-shadow: 0 4px 16px rgba(102, 126, 234, 0.18);
+    --hero-cta-hover-bg: #5a67d8;
+}
+
 .hero {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     color: var(--color-text-inverse, #fff);
@@ -10,6 +20,7 @@
     overflow: hidden;
     margin-top: -73px; /* Offset for fixed header */
     padding-top: 73px;
+    margin-bottom: var(--hero-bottom-spacing);
 }
 
 .hero::before {
@@ -194,11 +205,36 @@
     color: #2d3748;
 }
 
+.hero-waitlist-btn {
+    display: inline-block;
+    background: var(--hero-cta-bg);
+    color: var(--hero-cta-color);
+    border-radius: var(--hero-cta-radius);
+    padding: var(--hero-cta-padding);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: var(--hero-cta-shadow);
+    margin: 18px 0 0 0;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+.hero-waitlist-btn:hover,
+.hero-waitlist-btn:focus {
+    background: var(--hero-cta-hover-bg);
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.22);
+    transform: translateY(-2px) scale(1.03);
+    color: #fff;
+    outline: none;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
-        padding-top: 40px;
+        padding-top: 80px;
         min-height: unset;
+        margin-bottom: 2.5rem;
     }
     .hero-content {
         grid-template-columns: 1fr;
@@ -234,6 +270,15 @@
     }
     .flow-step {
         padding: var(--spacing-md, 16px);
+    }
+    .hero-waitlist-btn {
+        width: 100%;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 1rem;
+        padding: 1rem 0;
     }
 }
 
