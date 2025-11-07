@@ -29,8 +29,8 @@
 }
 
 .difference-card.companionsquared {
-    background: linear-gradient(135deg, #e6f3ff 0%, #f0e6ff 100%);
-    border: 3px solid #667eea;
+    background: linear-gradient(135deg, var(--mint-green-light) 0%, var(--snow) 100%);
+    border: 3px solid var(--forest-green);
 }
 
 .difference-card.dex {
@@ -195,7 +195,7 @@
 }
 
 .companionsquared .persona-list li {
-    border-left-color: #667eea;
+    border-left-color: var(--forest-green);
 }
 
 .dex .persona-list li {
@@ -256,7 +256,7 @@
 }
 
 .philosophy-card.companionsquared {
-    border-left-color: #667eea;
+    border-left-color: var(--forest-green);
 }
 
 .philosophy-card.monica {
@@ -312,8 +312,8 @@
 }
 
 .use-case-card.companionsquared {
-    background: linear-gradient(135deg, #e6f3ff 0%, #f0e6ff 100%);
-    border: 2px solid #667eea;
+    background: linear-gradient(135deg, var(--mint-green-light) 0%, var(--snow) 100%);
+    border: 2px solid var(--forest-green);
 }
 
 .use-case-card.monica {
@@ -352,7 +352,7 @@
 }
 
 .companionsquared .use-case-list li::before {
-    color: #667eea;
+    color: var(--forest-green);
 }
 
 /* Final Recommendation */
@@ -419,13 +419,22 @@
 }
 
 .cta-button.cta-primary {
-    background: #667eea;
-    color: white;
+    background: var(--forest-green);
+    color: var(--white);
 }
 
 .cta-button.cta-primary:hover {
-    background: #5a67d8;
+    background: var(--forest-green-light);
     transform: translateY(-2px);
+}
+
+.cta-button.cta-primary:active {
+    background: var(--forest-green-dark);
+}
+
+.cta-button.cta-primary:focus-visible {
+    outline: 2px solid var(--mint-green);
+    outline-offset: 4px;
 }
 
 .cta-button.cta-secondary {
@@ -480,14 +489,19 @@
 }
 
 .alternative-link a {
-    color: #667eea;
+    color: var(--forest-green);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
 }
 
 .alternative-link a:hover {
-    color: #5a67d8;
+    color: var(--forest-green-light);
+}
+
+.alternative-link a:focus-visible {
+    outline: 2px solid var(--mint-green);
+    outline-offset: 4px;
 }
 
 .alternative-details p {
@@ -529,7 +543,7 @@
 }
 
 .approach-card.companionsquared {
-    background: linear-gradient(135deg, #e6f3ff 0%, #f0e6ff 100%);
+    background: linear-gradient(135deg, var(--mint-green-light) 0%, var(--snow) 100%);
 }
 
 .approach-card h3 {
@@ -554,7 +568,7 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: #667eea;
+    color: var(--forest-green);
     font-weight: bold;
 }
 

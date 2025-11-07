@@ -1,50 +1,79 @@
-<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="1200" height="630" fill="url(#gradient)"/>
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
   
-  <!-- Content Container -->
-  <g transform="translate(600, 315)">
-    <!-- Logo -->
-    <g transform="translate(-200, -100)">
-      <!-- Rounded square background -->
-      <rect x="20" y="20" width="160" height="160" rx="24" fill="white" opacity="0.1"/>
-      
-      <!-- Hexagonal pattern of friend nodes -->
-      <circle cx="100" cy="45" r="4" fill="white" opacity="0.25"/>
-      <circle cx="145" cy="75" r="4" fill="white" opacity="0.25"/>
-      <circle cx="145" cy="125" r="4" fill="white" opacity="0.25"/>
-      <circle cx="100" cy="155" r="4" fill="white" opacity="0.25"/>
-      <circle cx="55" cy="125" r="4" fill="white" opacity="0.25"/>
-      <circle cx="55" cy="75" r="4" fill="white" opacity="0.25"/>
-      
-      <!-- Central AI companion node -->
-      <circle cx="100" cy="100" r="6" fill="#ffd700" opacity="0.4"/>
-      
-      <!-- Connection lines -->
-      <line x1="100" y1="100" x2="100" y2="45" stroke="white" stroke-width="1" opacity="0.15"/>
-      <line x1="100" y1="100" x2="145" y2="75" stroke="white" stroke-width="1" opacity="0.15"/>
-      <line x1="100" y1="100" x2="145" y2="125" stroke="white" stroke-width="1" opacity="0.15"/>
-      <line x1="100" y1="100" x2="100" y2="155" stroke="white" stroke-width="1" opacity="0.15"/>
-      <line x1="100" y1="100" x2="55" y2="125" stroke="white" stroke-width="1" opacity="0.15"/>
-      <line x1="100" y1="100" x2="55" y2="75" stroke="white" stroke-width="1" opacity="0.15"/>
-      
-      <!-- C² text -->
-      <text x="100" y="118" font-family="Arial, sans-serif" font-size="58" font-weight="bold" fill="white" text-anchor="middle">C²</text>
-    </g>
-    
-    <!-- Title -->
-    <text x="0" y="50" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">CompanionSquared</text>
-    
-    <!-- Subtitle -->
-    <text x="0" y="100" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle">Your Companions' Companion</text>
-    <text x="0" y="140" font-family="Arial, sans-serif" font-size="24" fill="white" opacity="0.9" text-anchor="middle">The friendly AI that helps you nurture friendships through reflection</text>
-  </g>
-  
-  <!-- Gradient definition -->
+  <!-- Define gradients -->
   <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    <!-- Background gradient from forest green to sage green -->
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D5F3F"/>
+      <stop offset="100%" stop-color="#7BA683"/>
+    </linearGradient>
+    
+    <!-- Network line gradient -->
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B8E6C9" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8FD4A8" stop-opacity="0.6"/>
     </linearGradient>
   </defs>
-</svg> 
+  
+  <!-- Logo positioned on the left side -->
+  <g transform="translate(200, 115)">
+    <!-- HEXAGON PERIMETER - Most visible -->
+    <line x1="144" y1="54" x2="222" y2="99" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+    <line x1="222" y1="99" x2="222" y2="189" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+    <line x1="222" y1="189" x2="144" y2="234" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+    <line x1="144" y1="234" x2="66" y2="189" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+    <line x1="66" y1="189" x2="66" y2="99" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+    <line x1="66" y1="99" x2="144" y2="54" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+    
+    <!-- All internal connections (diagonal cross-connections) -->
+    <line x1="144" y1="54" x2="222" y2="189" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+    <line x1="144" y1="54" x2="144" y2="234" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+    <line x1="144" y1="54" x2="66" y2="189" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+    
+    <line x1="222" y1="99" x2="144" y2="234" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+    <line x1="222" y1="99" x2="66" y2="189" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+    <line x1="222" y1="99" x2="66" y2="99" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+    
+    <line x1="222" y1="189" x2="66" y2="99" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+    <line x1="222" y1="189" x2="66" y2="189" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+    
+    <line x1="144" y1="234" x2="66" y2="99" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+    
+    <!-- All outer nodes to center -->
+    <line x1="144" y1="54" x2="144" y2="144" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+    <line x1="222" y1="99" x2="144" y2="144" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+    <line x1="222" y1="189" x2="144" y2="144" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+    <line x1="144" y1="234" x2="144" y2="144" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+    <line x1="66" y1="189" x2="144" y2="144" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+    <line x1="66" y1="99" x2="144" y2="144" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+    
+    <!-- Network nodes -->
+    <!-- Outer hexagon nodes -->
+    <circle cx="144" cy="54" r="12" fill="#A4C4A8" opacity="0.8"/>
+    <circle cx="222" cy="99" r="12" fill="#A4C4A8" opacity="0.8"/>
+    <circle cx="222" cy="189" r="12" fill="#A4C4A8" opacity="0.8"/>
+    <circle cx="144" cy="234" r="12" fill="#A4C4A8" opacity="0.8"/>
+    <circle cx="66" cy="189" r="12" fill="#A4C4A8" opacity="0.8"/>
+    <circle cx="66" cy="99" r="12" fill="#A4C4A8" opacity="0.8"/>
+    
+    <!-- Center node (golden/amber accent) - on top -->
+    <circle cx="144" cy="144" r="14" fill="#D4AF37" opacity="0.9"/>
+    
+    <!-- C² Text -->
+    <text x="135" y="170" font-family="Inter, system-ui, sans-serif" font-size="90" font-weight="700" fill="white" text-anchor="middle">
+      C
+    </text>
+    
+    <!-- Superscript 2 -->
+    <text x="187" y="135" font-family="Inter, system-ui, sans-serif" font-size="60" font-weight="700" fill="white" text-anchor="middle">
+      2
+    </text>
+  </g>
+  
+  <!-- CompanionSquared Text -->
+  <text x="520" y="340" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="700" fill="white" text-anchor="start">
+    CompanionSquared
+  </text>
+</svg>

@@ -54,8 +54,8 @@
 }
 
 .footer-cta {
-    background: #667eea;
-    color: white;
+    background: var(--forest-green);
+    color: var(--white);
     padding: 12px 24px;
     border-radius: 8px;
     font-weight: 600;
@@ -64,8 +64,17 @@
 }
 
 .footer-cta:hover {
-    background: #5a67d8;
+    background: var(--forest-green-light);
     transform: translateY(-2px);
+}
+
+.footer-cta:active {
+    background: var(--forest-green-dark);
+}
+
+.footer-cta:focus-visible {
+    outline: 2px solid var(--mint-green);
+    outline-offset: 4px;
 }
 
 .footer-divider {

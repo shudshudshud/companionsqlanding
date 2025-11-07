@@ -1,48 +1,71 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Rounded square background -->
-  <rect x="20" y="20" width="160" height="160" rx="24" fill="url(#gradient)"/>
+<svg width="576" height="576" viewBox="0 0 576 576" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="576" height="576" rx="72" fill="url(#bgGradient)"/>
   
-  <!-- Hexagonal pattern of friend nodes (larger, more spread out) -->
-  <!-- Top -->
-  <circle cx="100" cy="45" r="4" fill="white" opacity="0.25"/>
-  <!-- Top right -->
-  <circle cx="145" cy="75" r="4" fill="white" opacity="0.25"/>
-  <!-- Bottom right -->
-  <circle cx="145" cy="125" r="4" fill="white" opacity="0.25"/>
-  <!-- Bottom -->
-  <circle cx="100" cy="155" r="4" fill="white" opacity="0.25"/>
-  <!-- Bottom left -->
-  <circle cx="55" cy="125" r="4" fill="white" opacity="0.25"/>
-  <!-- Top left -->
-  <circle cx="55" cy="75" r="4" fill="white" opacity="0.25"/>
-  
-  <!-- Central AI companion node (bigger) -->
-  <circle cx="100" cy="100" r="6" fill="#ffd700" opacity="0.4"/>
-  
-  <!-- Connection lines from center to all nodes (very subtle) -->
-  <line x1="100" y1="100" x2="100" y2="45" stroke="white" stroke-width="1" opacity="0.15"/>
-  <line x1="100" y1="100" x2="145" y2="75" stroke="white" stroke-width="1" opacity="0.15"/>
-  <line x1="100" y1="100" x2="145" y2="125" stroke="white" stroke-width="1" opacity="0.15"/>
-  <line x1="100" y1="100" x2="100" y2="155" stroke="white" stroke-width="1" opacity="0.15"/>
-  <line x1="100" y1="100" x2="55" y2="125" stroke="white" stroke-width="1" opacity="0.15"/>
-  <line x1="100" y1="100" x2="55" y2="75" stroke="white" stroke-width="1" opacity="0.15"/>
-  
-  <!-- Connections between outer nodes (hexagonal network, very subtle) -->
-  <line x1="100" y1="45" x2="145" y2="75" stroke="white" stroke-width="1" opacity="0.12"/>
-  <line x1="145" y1="75" x2="145" y2="125" stroke="white" stroke-width="1" opacity="0.12"/>
-  <line x1="145" y1="125" x2="100" y2="155" stroke="white" stroke-width="1" opacity="0.12"/>
-  <line x1="100" y1="155" x2="55" y2="125" stroke="white" stroke-width="1" opacity="0.12"/>
-  <line x1="55" y1="125" x2="55" y2="75" stroke="white" stroke-width="1" opacity="0.12"/>
-  <line x1="55" y1="75" x2="100" y2="45" stroke="white" stroke-width="1" opacity="0.12"/>
-  
-  <!-- C² text - centralized and much bigger -->
-  <text x="100" y="118" font-family="Arial, sans-serif" font-size="58" font-weight="bold" fill="white" text-anchor="middle">C²</text>
-  
-  <!-- Gradient definition -->
+  <!-- Define gradients -->
   <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    <!-- Background gradient from forest green to sage green -->
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="576" y2="576" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D5F3F"/>
+      <stop offset="100%" stop-color="#7BA683"/>
+    </linearGradient>
+    
+    <!-- Network line gradient -->
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B8E6C9" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8FD4A8" stop-opacity="0.6"/>
     </linearGradient>
   </defs>
-</svg> 
+  
+  <!-- HEXAGON PERIMETER - Most visible -->
+  <line x1="288" y1="108" x2="444" y2="198" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+  <line x1="444" y1="198" x2="444" y2="378" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+  <line x1="444" y1="378" x2="288" y2="468" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+  <line x1="288" y1="468" x2="132" y2="378" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+  <line x1="132" y1="378" x2="132" y2="198" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+  <line x1="132" y1="198" x2="288" y2="108" stroke="#8FD4A8" stroke-width="3" opacity="0.8"/>
+  
+  <!-- All internal connections (diagonal cross-connections) -->
+  <line x1="288" y1="108" x2="444" y2="378" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+  <line x1="288" y1="108" x2="288" y2="468" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+  <line x1="288" y1="108" x2="132" y2="378" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+  
+  <line x1="444" y1="198" x2="288" y2="468" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+  <line x1="444" y1="198" x2="132" y2="378" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+  <line x1="444" y1="198" x2="132" y2="198" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+  
+  <line x1="444" y1="378" x2="132" y2="198" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+  <line x1="444" y1="378" x2="132" y2="378" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+  
+  <line x1="288" y1="468" x2="132" y2="198" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- All outer nodes to center -->
+  <line x1="288" y1="108" x2="288" y2="288" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="444" y1="198" x2="288" y2="288" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="444" y1="378" x2="288" y2="288" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="288" y1="468" x2="288" y2="288" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="132" y1="378" x2="288" y2="288" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="132" y1="198" x2="288" y2="288" stroke="url(#lineGradient)" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Network nodes -->
+  <!-- Outer hexagon nodes -->
+  <circle cx="288" cy="108" r="14" fill="#A4C4A8" opacity="0.8"/>
+  <circle cx="444" cy="198" r="14" fill="#A4C4A8" opacity="0.8"/>
+  <circle cx="444" cy="378" r="14" fill="#A4C4A8" opacity="0.8"/>
+  <circle cx="288" cy="468" r="14" fill="#A4C4A8" opacity="0.8"/>
+  <circle cx="132" cy="378" r="14" fill="#A4C4A8" opacity="0.8"/>
+  <circle cx="132" cy="198" r="14" fill="#A4C4A8" opacity="0.8"/>
+  
+  <!-- Center node (golden/amber accent) - on top -->
+  <circle cx="288" cy="288" r="16" fill="#D4AF37" opacity="0.9"/>
+  
+  <!-- C² Text -->
+  <text x="270" y="340" font-family="Inter, system-ui, sans-serif" font-size="180" font-weight="700" fill="white" text-anchor="middle">
+    C
+  </text>
+  
+  <!-- Superscript 2 -->
+  <text x="375" y="270" font-family="Inter, system-ui, sans-serif" font-size="120" font-weight="700" fill="white" text-anchor="middle">
+    2
+  </text>
+</svg>

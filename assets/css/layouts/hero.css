@@ -2,17 +2,17 @@
 
 :root {
     --hero-bottom-spacing: 3.5rem;
-    --hero-cta-bg: #00b894;
+    --hero-cta-bg: #2D5F3F;
     --hero-cta-color: #fff;
     --hero-cta-radius: 12px;
     --hero-cta-padding: 1rem 2.5rem;
-    --hero-cta-shadow: 0 4px 16px rgba(0, 184, 148, 0.18);
-    --hero-cta-hover-bg: #009e74;
+    --hero-cta-shadow: 0 4px 16px rgba(45, 95, 63, 0.18);
+    --hero-cta-hover-bg: #3A7A52;
 }
 
 .hero {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    color: var(--color-text-inverse, #fff);
+    background: linear-gradient(135deg, var(--mint-green-light) 0%, var(--white) 100%);
+    color: var(--charcoal);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@
     font-weight: 700;
     margin-bottom: var(--spacing-md, 20px);
     line-height: 1.2;
-    color: var(--color-text-inverse, #fff);
+    color: var(--charcoal);
 }
 
 .hero-text .subtitle {
@@ -66,7 +66,7 @@
     margin-bottom: var(--spacing-lg, 30px);
     opacity: 0.95;
     font-weight: 300;
-    color: var(--color-text-inverse, #fff);
+    color: var(--slate);
 }
 
 .hero-text p,
@@ -74,7 +74,7 @@
     font-size: var(--font-size-base, 1.1rem);
     margin-bottom: var(--spacing-xl, 40px);
     opacity: 0.9;
-    color: var(--color-text-inverse, #fff);
+    color: var(--slate);
     line-height: 1.6;
 }
 
@@ -116,8 +116,8 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: var(--color-background-alt, #e2e8f0);
-    color: var(--color-primary, #667eea);
+    background: var(--mint-green-light);
+    color: var(--forest-green);
     border-radius: 50%;
     text-align: center;
     line-height: 30px;
@@ -128,7 +128,7 @@
 .flow-step h3 {
     font-size: var(--font-size-md, 1.1rem);
     margin-bottom: var(--spacing-xs, 8px);
-    color: var(--color-primary, #667eea);
+    color: var(--forest-green);
 }
 
 .flow-step p {
@@ -171,7 +171,7 @@
 .process-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, var(--forest-green), var(--sage-green));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -223,10 +223,15 @@
 .hero-waitlist-btn:hover,
 .hero-waitlist-btn:focus {
     background: var(--hero-cta-hover-bg);
-    box-shadow: 0 8px 24px rgba(0, 184, 148, 0.22);
+    box-shadow: 0 8px 24px rgba(45, 95, 63, 0.22);
     transform: translateY(-2px) scale(1.03);
     color: #fff;
     outline: none;
+}
+
+.hero-waitlist-btn:focus-visible {
+    outline: 2px solid var(--mint-green);
+    outline-offset: 4px;
 }
 
 /* Responsive Design */

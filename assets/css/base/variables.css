@@ -1,14 +1,43 @@
 :root {
-    /* Colors */
-    --color-primary: #667eea;
-    --color-primary-dark: #5a67d8;
-    --color-secondary: #764ba2;
-    --color-text: #2d3748;
-    --color-text-light: #4a5568;
-    --color-text-lighter: #718096;
-    --color-background: #ffffff;
-    --color-background-alt: #f8fafc;
-    --color-border: #e2e8f0;
+    /* Primary Colors */
+    --forest-green: #2D5F3F;
+    --forest-green-light: #3A7A52;
+    --forest-green-dark: #1F4530;
+
+    --sage-green: #7BA683;
+    --sage-green-light: #A4C4A8;
+    --sage-green-dark: #5A8261;
+
+    --mint-green: #B8E6C9;
+    --mint-green-light: #D9F2E3;
+    --mint-green-dark: #8FD4A8;
+
+    /* Neutrals */
+    --charcoal: #2C2C2C;
+    --slate: #4A5568;
+    --stone: #718096;
+    --silver: #CBD5E0;
+    --cloud: #E2E8F0;
+    --snow: #F7FAFC;
+    --white: #FFFFFF;
+
+    /* Semantic */
+    --success: #48BB78;
+    --warning: #ED8936;
+    --error: #F56565;
+    --info: #4299E1;
+
+    /* Legacy mappings for backwards compatibility */
+    --color-primary: var(--forest-green);
+    --color-primary-light: var(--forest-green-light);
+    --color-primary-dark: var(--forest-green-dark);
+    --color-secondary: var(--sage-green);
+    --color-text: var(--charcoal);
+    --color-text-light: var(--slate);
+    --color-text-lighter: var(--stone);
+    --color-background: var(--white);
+    --color-background-alt: var(--snow);
+    --color-border: var(--silver);
     
     /* Typography */
     --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;

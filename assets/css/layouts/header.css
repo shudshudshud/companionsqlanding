@@ -56,14 +56,19 @@
 }
 
 .nav-links a {
-    color: #4a5568;
+    color: var(--slate);
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
 }
 
 .nav-links a:hover {
-    color: #667eea;
+    color: var(--forest-green);
+}
+
+.nav-links a:focus-visible {
+    outline: 2px solid var(--mint-green);
+    outline-offset: 4px;
 }
 
 .nav-links a::after {
@@ -73,7 +78,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: #667eea;
+    background: var(--forest-green);
     transition: width 0.3s ease;
 }
 
@@ -82,8 +87,8 @@
 }
 
 .header-cta {
-    background: #667eea;
-    color: white;
+    background: var(--forest-green);
+    color: var(--white);
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: 600;
@@ -92,9 +97,18 @@
 }
 
 .header-cta:hover {
-    background: #5a67d8;
+    background: var(--forest-green-light);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 4px 12px rgba(45, 95, 63, 0.3);
+}
+
+.header-cta:active {
+    background: var(--forest-green-dark);
+}
+
+.header-cta:focus-visible {
+    outline: 2px solid var(--mint-green);
+    outline-offset: 4px;
 }
 
 /* Mobile Menu Button */
@@ -184,7 +198,7 @@
 }
 
 .mobile-menu a:hover {
-    color: #667eea;
+    color: var(--forest-green);
 }
 
 .mobile-menu .header-cta {
@@ -195,8 +209,8 @@
 
 /* Page Header Styles (for comparison pages) */
 .page-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--forest-green) 0%, var(--sage-green) 100%);
+    color: var(--white);
     padding: 120px 0 80px;
     text-align: center;
     position: relative;

@@ -48,12 +48,21 @@ p {
 }
 
 a {
-    color: var(--color-primary);
+    color: var(--forest-green);
     transition: var(--transition-base);
 }
 
 a:hover {
-    color: var(--color-primary-dark);
+    color: var(--forest-green-light);
+}
+
+a:active {
+    color: var(--forest-green-dark);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--mint-green);
+    outline-offset: 4px;
 }
 
 .text-sm {
